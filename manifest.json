@@ -1,0 +1,9 @@
+{
+  "name": "NeuroSymbolic Cognitive Mesh",
+  "short_name": "NeuroSymbolic",
+  "description": "Formal Neuro-Symbolic Reasoning Engine, Hypergraph Knowledge Mesh & Datalog Solver",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#020403",
+  "theme_color": "#020403"
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroSymbolic Cognitive Mesh | Formal Verification Workstation</title>
+  <meta name="description" content="Formal Neuro-Symbolic Reasoning Engine, Hypergraph Knowledge Mesh & Datalog Solver">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#020403">
+
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/cyber-mesh.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2308110c'/><circle cx='50' cy='50' r='30' fill='none' stroke='%2300ff88' stroke-width='6'/><circle cx='50' cy='50' r='10' fill='%23fb7185'/></svg>">
+</head>
+<body>
+  <div class="scanlines-overlay"></div>
+
+  <div id="app-root">
+    
+    <!-- Topbar Header -->
+    <header class="topbar">
+      <div class="brand-section">
+        <div class="brand-logo-icon">NS</div>
+        <div class="brand-meta">
+          <div class="brand-title">
+            NeuroSymbolic Mesh <span class="brand-version-badge">v2.8-FORMAL</span>
+          </div>
+          <div class="brand-tagline">Hypergraph Knowledge Mesh & First-Order Logic Verifier</div>
+        </div>
+      </div>
+
+      <!-- Telemetry Strip -->
+      <div class="telemetry-strip">
+        <div class="telemetry-item">
+          <span class="pulse-dot"></span>
+          <span style="color: var(--text-tertiary);">Status:</span>
+          <span style="color: var(--emerald-400); font-weight: 700;">Z3 VERIFIED [100% SOUND]</span>
+        </div>
+        <div class="telemetry-item">
+          <span style="color: var(--text-tertiary);">Inference Logic:</span>
+          <span style="color: var(--cyan-400);">Datalog Fixed-Point</span>
+        </div>
+        <div class="telemetry-item">
+          <span style="color: var(--text-tertiary);">Proof Depth:</span>
+          <span style="color: var(--coral-400);">3 Levels (Q.E.D.)</span>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <button class="btn btn-emerald" id="btn-run-inference">Execute Forward Chaining</button>
+        <button class="btn btn-outline" id="btn-lang-toggle">عربي</button>
+        <button class="btn btn-cyan" id="btn-toggle-terminal">Logic CLI</button>
+      </div>
+    </header>
+
+    <!-- Workstation Body -->
+    <div class="workstation-body">
+      
+      <!-- Primary Sidebar -->
+      <aside class="primary-sidebar">
+        <div>
+          <div class="nav-section-title">Cognitive Modules</div>
+          <ul class="nav-list">
+            <li>
+              <button class="nav-item-btn active" data-view="view-mesh">
+                <span>🕸</span>
+                <span>Hypergraph Mesh</span>
+                <span class="nav-badge">N-ary</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-view="view-proof">
+                <span>📜</span>
+                <span>Formal Proof Tree</span>
+                <span class="nav-badge">Q.E.D.</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-view="view-rules">
+                <span>⚙</span>
+                <span>Datalog Horn Clauses</span>
+                <span class="nav-badge">Rules</span>
+              </button>
+            </li>
+            <li>
+              <button class="nav-item-btn" data-view="view-audit">
+                <span>🛡</span>
+                <span>Soundness Audit</span>
+                <span class="nav-badge">Matrix</span>
+              </button>
+            </li>
+          </ul>
+
+          <div class="nav-section-title" style="margin-top: 14px;">Domain Scenarios</div>
+          <div style="padding: 0 12px;">
+            <select style="width: 100%; background: var(--bg-surface); color: var(--emerald-300); border: 1px solid var(--border-medium); border-radius: 4px; padding: 7px; font-family: var(--font-mono); font-size: 11px; outline: none;">
+              <option>Critical Grid Cyber-Defense</option>
+              <option>Bio-Spectral Anomaly Verification</option>
+              <option>Autonomous Swarm Consensus</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="sidebar-footer-box">
+          <div style="display: flex; justify-content: space-between; font-size: 11px; margin-bottom: 4px;">
+            <span style="color: var(--text-tertiary);">Formal Theorem:</span>
+            <span style="color: var(--emerald-400);">PROVED</span>
+          </div>
+          <div style="font-size: 10px; color: var(--text-secondary);">
+            Zero Hallucination Tolerance. Every conclusion is bound to axiomatic First-Order Logic deduction.
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Viewport -->
+      <main class="viewport-stage">
+        
+        <!-- View 1: Hypergraph Mesh -->
+        <section id="view-mesh" class="view-container active">
+          <div class="hud-metrics-grid">
+            <div class="hud-tile">
+              <span class="hud-tile-label">Hypergraph Vertices</span>
+              <span class="hud-tile-val" style="color: var(--cyan-400);">8 Vertices</span>
+              <span style="font-size: 10.5px; color: var(--text-emerald);">Sensors, Assets, Threat Actors</span>
+            </div>
+            <div class="hud-tile">
+              <span class="hud-tile-label">Active Hyperedges</span>
+              <span class="hud-tile-val" style="color: var(--coral-400);">4 N-ary Clusters</span>
+              <span style="font-size: 10.5px; color: var(--text-tertiary);">Convex Hull Barycenter Physics</span>
+            </div>
+            <div class="hud-tile">
+              <span class="hud-tile-label">Deductive Closure</span>
+              <span class="hud-tile-val" style="color: var(--emerald-400);">Converged</span>
+              <span style="font-size: 10.5px; color: var(--text-secondary);">Fixed-Point Reached</span>
+            </div>
+          </div>
+
+          <div class="cyber-card" style="flex: 1; min-height: 520px; display: flex; flex-direction: column;">
+            <div class="card-header-row">
+              <h3 class="card-title">MATHEMATICAL HYPERGRAPH VISUALIZER (BARYCENTER CLUSTERING)</h3>
+              <button class="btn btn-outline" onclick="window.App.hypergraph.resetCamera()">Reset Camera</button>
+            </div>
+            <div class="canvas-holder" style="flex: 1; min-height: 480px;">
+              <canvas id="canvas-hypergraph" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- View 2: Proof Tree Verifier -->
+        <section id="view-proof" class="view-container">
+          <div class="cyber-card" style="flex: 1; min-height: 540px;">
+            <div class="card-header-row">
+              <h3 class="card-title">DEDUCTIVE RESOLUTION PROOF TREE (AXIOM → THEOREM)</h3>
+              <span class="nav-badge">FORMAL SOUNDNESS CERTIFIED</span>
+            </div>
+            <div class="canvas-holder" style="flex: 1; min-height: 480px;">
+              <canvas id="canvas-proof-tree" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- View 3: Rules Studio -->
+        <section id="view-rules" class="view-container">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="cyber-card">
+              <div class="card-header-row">
+                <h3 class="card-title">AXIOMATIC GROUND TRUTHS (FACTS)</h3>
+                <span class="nav-badge">AXIOMS</span>
+              </div>
+              <div id="facts-list-container"></div>
+            </div>
+
+            <div class="cyber-card">
+              <div class="card-header-row">
+                <h3 class="card-title">HORN CLAUSE INFERENCE RULES</h3>
+                <span class="nav-badge">DATALOG</span>
+              </div>
+              <div id="rules-list-container"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- View 4: Consistency Matrix -->
+        <section id="view-audit" class="view-container">
+          <div id="audit-matrix-container"></div>
+        </section>
+
+      </main>
+
+    </div>
+
+    <!-- Bottom CLI Drawer -->
+    <footer class="terminal-drawer" id="terminal-drawer">
+      <div class="terminal-bar">
+        <div class="terminal-tabs">
+          <button class="terminal-tab-btn active">REPL LOGIC CLI</button>
+          <button class="terminal-tab-btn">Z3 SMT VERIFIER LOGS</button>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-family: var(--font-mono); font-size: 10.5px; color: var(--emerald-400);">● 100% SOUNDNESS GUARANTEED</span>
+          <button class="btn btn-outline" style="padding: 2px 8px; font-size: 10px;" onclick="document.getElementById('terminal-drawer').classList.toggle('minimized')">▼</button>
+        </div>
+      </div>
+      <div class="terminal-body" id="terminal-logs-body"></div>
+      <div style="background: var(--bg-surface); padding: 4px 16px 8px; border-top: 1px solid var(--border-subtle);">
+        <div class="terminal-prompt-line">
+          <span class="prompt-prefix">mesh:logic&gt;</span>
+          <input type="text" id="terminal-cli-input" class="terminal-input" placeholder="Type 'help', 'infer', 'prove formal_stability_guaranteed', 'mesh', 'rules'..." autocomplete="off">
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="scripts/hypergraph-engine.js"></script>
+  <script src="scripts/datalog-solver.js"></script>
+  <script src="scripts/proof-visualizer.js"></script>
+  <script src="scripts/terminal-cli.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>

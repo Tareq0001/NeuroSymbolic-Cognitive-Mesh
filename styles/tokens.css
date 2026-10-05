@@ -1,0 +1,71 @@
+/* ==========================================================================
+   NEUROSYMBOLIC COGNITIVE MESH - DESIGN SYSTEM TOKENS
+   Cyber-Emerald Obsidian Standard | Ultra High-Density Enterprise Architecture
+   ========================================================================== */
+
+:root {
+  --bg-core: #020403;
+  --bg-deep: #050a07;
+  --bg-surface: #08110c;
+  --bg-surface-elevated: #0d1a13;
+  --bg-surface-hover: #12241b;
+  --bg-glass: rgba(8, 17, 12, 0.88);
+  --bg-overlay: rgba(2, 4, 3, 0.85);
+
+  /* Primary Cyber Emerald */
+  --emerald-300: #6ee7b7;
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+  --emerald-pulse: #00ff88;
+  --emerald-glow: rgba(16, 185, 129, 0.28);
+  --emerald-glow-strong: rgba(0, 255, 136, 0.6);
+
+  /* Secondary Cyber Cyan */
+  --cyan-300: #67e8f9;
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --cyan-glow: rgba(34, 211, 238, 0.25);
+
+  /* Tertiary Coral Terracotta & Neon Rose */
+  --coral-300: #fda4af;
+  --coral-400: #fb7185;
+  --coral-500: #f43f5e;
+  --coral-glow: rgba(251, 113, 133, 0.3);
+
+  /* Warning Amber */
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+
+  /* Borders & Wireframes */
+  --border-subtle: rgba(16, 185, 129, 0.14);
+  --border-medium: rgba(16, 185, 129, 0.28);
+  --border-strong: rgba(16, 185, 129, 0.55);
+  --border-laser: #00ff88;
+  --border-coral: rgba(251, 113, 133, 0.45);
+
+  /* Text & Hierarchy */
+  --text-pure: #ffffff;
+  --text-primary: #e6f4ee;
+  --text-secondary: #94b8a7;
+  --text-tertiary: #5d7e6f;
+  --text-muted: #3d554a;
+  --text-emerald: #34d399;
+  --text-coral: #fb7185;
+  --text-cyan: #22d3ee;
+
+  /* Typography */
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Menlo, monospace;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'Cairo', 'Segoe UI', sans-serif;
+
+  /* Dimensions */
+  --topbar-height: 52px;
+  --sidebar-width: 250px;
+  --terminal-height: 220px;
+  --terminal-minimized-height: 38px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.25s ease-out;
+}
